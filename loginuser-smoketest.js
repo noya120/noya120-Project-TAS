@@ -2,7 +2,7 @@ import http from "k6/http";
 import { check } from "k6";
 
 export let options = {
-    vus: 1,           // smoke test = 1 user saja
+    vus: 1,          
     duration: "20s",
 };
 
