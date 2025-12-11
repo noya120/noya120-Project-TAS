@@ -3,9 +3,9 @@ import { sleep } from "k6";
 
 export let options = {
     stages: [
-        { duration: "10s", target: 10 },    // normal
-        { duration: "1s", target: 200 },    // spike tiba-tiba
-        { duration: "10s", target: 10 },    // kembali turun
+        { duration: "10s", target: 10 },    
+        { duration: "1s", target: 200 },   
+        { duration: "10s", target: 10 },    
     ],
 };
 
