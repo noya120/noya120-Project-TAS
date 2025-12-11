@@ -2,8 +2,8 @@ import http from "k6/http";
 import { check } from "k6";
 
 export let options = {
-    vus: 20,              // 20 user simultan = beban normal
-    duration: "30s",      // durasi 30 detik
+    vus: 20,             l
+    duration: "30s",      
 };
 
 export default function () {
