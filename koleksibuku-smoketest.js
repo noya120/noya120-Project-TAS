@@ -2,19 +2,18 @@ import http from "k6/http";
 import { check, sleep } from "k6";
 
 export let options = {
-    vus: 1,            // 1 virtual user saja
-    duration: "20s",   // tes cepat
+    vus: 1,            
+    duration: "20s",   
 };
 
 export default function () {
 
-    const url = "http://localhost/TRPWIFix/koleksi.php";   // <-- ubah jika beda nama file
+    const url = "http://localhost/TRPWIFix/koleksi.php";   
 
     // Jika halaman koleksi membutuhkan login:
     const params = {
         headers: {
-            "Cookie": "PHPSESSID=ISI_SESSION_VALID"   // opsional, boleh dihapus jika tidak perlu login
-        }
+            "Cookie": "PHPSESSID=ISI_SESSION_VALID"   
     };
 
     const res = http.get(url, params);
