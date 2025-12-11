@@ -3,10 +3,10 @@ import { check } from "k6";
 
 export let options = {
     stages: [
-        { duration: "20s", target: 10 },   // durasi awal
-        { duration: "20s", target: 50 },   // naik jadi 50 user
-        { duration: "20s", target: 100 },  // tekanan tinggi
-        { duration: "20s", target: 0 },    // turunkan kembali
+        { duration: "20s", target: 10 },   
+        { duration: "20s", target: 50 },   
+        { duration: "20s", target: 100 },  
+        { duration: "20s", target: 0 },    
     ],
 };
 
